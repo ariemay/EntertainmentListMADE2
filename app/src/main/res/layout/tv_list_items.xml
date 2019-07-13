@@ -6,7 +6,7 @@
     android:padding="16dp">
 
     <ImageView
-        android:id="@+id/movie_poster"
+        android:id="@+id/tv_poster"
         android:layout_width="100dp"
         android:layout_height="150dp"
         android:scaleType="fitXY"
@@ -19,20 +19,20 @@
         android:layout_marginLeft="10dp">
 
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/showName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/name_default"
+            android:text="@string/tv_default_name"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/date"
+            android:id="@+id/genre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/name"
+            android:layout_below="@id/showName"
             android:layout_marginTop="5dp"
-            android:text="@string/date_default"/>
+            android:text="@string/genre_default"/>
 
     </RelativeLayout>
 
