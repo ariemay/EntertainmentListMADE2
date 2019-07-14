@@ -99,13 +99,13 @@
     </array>
 
     <array name="data_tv_photo">
-        <item>@drawable/tv_AaronStonePoster</item>
-        <item>@drawable/tv_Abbott_and_costello_show</item>
-        <item>@drawable/tv_AbbyTVSeriesTitleCard</item>
-        <item>@drawable/tv_ABC_Aferschool_Special_Title_Screen</item>
-        <item>@drawable/tv_About_a_Boy_intertitle</item>
-        <item>@drawable/tv_Access_2017_Logo</item>
-        <item>@drawable/tv_Jerry_Van_Dyke_Accidental_Family</item>
+        <item>@drawable/tv_aaronstone</item>
+        <item>@drawable/tv_abbot</item>
+        <item>@drawable/tv_abby</item>
+        <item>@drawable/tv_abc</item>
+        <item>@drawable/tv_about</item>
+        <item>@drawable/tv_access</item>
+        <item>@drawable/tv_jerry</item>
     </array>
 
     <!-- TODO: Remove or change this placeholder text -->

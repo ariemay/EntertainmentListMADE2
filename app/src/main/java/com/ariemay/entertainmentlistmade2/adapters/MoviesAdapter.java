@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.ariemay.entertainmentlistmade2.R;
 import com.ariemay.entertainmentlistmade2.models.Movies;
 import com.ariemay.entertainmentlistmade2.views.MovieDetails;
+import com.ariemay.entertainmentlistmade2.views.MoviesFragment;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
@@ -22,9 +23,9 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
     private Context context;
     private ArrayList<Movies> movies;
 
-    public MoviesAdapter(Context context, ArrayList<Movies> listMovies) {
+    public MoviesAdapter(Context context, ArrayList<Movies> movies) {
         this.context = context;
-        movies = new ArrayList<>();
+        this.movies = movies;
     }
 
     public void setMovies(ArrayList<Movies> movies) {

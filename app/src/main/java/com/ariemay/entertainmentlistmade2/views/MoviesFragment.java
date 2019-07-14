@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,7 +28,6 @@ public class MoviesFragment extends Fragment {
     private String[] moviesName;
     private String[] moviesDate;
     private TypedArray moviesPoster;
-    private MoviesAdapter moviesAdapter;
 
     public MoviesFragment() {
         // Required empty public constructor
@@ -49,11 +49,12 @@ public class MoviesFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MoviesAdapter adapter = new MoviesAdapter(getContext(), listMovies);
         prepare();
-        addItem();
+        addItem(adapter);
     }
 
-    private void addItem() {
+    private void addItem(MoviesAdapter adapter) {
         listMovies = new ArrayList<>();
 
         for (int i = 0; i < moviesName.length; i++) {
@@ -63,8 +64,7 @@ public class MoviesFragment extends Fragment {
             movie.setPhoto(moviesPoster.getResourceId(i, -1));
             listMovies.add(movie);
         }
-
-        moviesAdapter.setMovies(listMovies);
+        adapter.setMovies(listMovies);
     }
 
     private void prepare() {
