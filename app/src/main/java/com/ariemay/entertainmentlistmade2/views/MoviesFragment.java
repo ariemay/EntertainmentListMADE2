@@ -1,14 +1,19 @@
 package com.ariemay.entertainmentlistmade2.views;
 
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -27,6 +32,8 @@ public class MoviesFragment extends Fragment {
     private ArrayList<Movies> listMovies;
     private String[] moviesName;
     private String[] moviesDate;
+    private String[] moviesActor;
+    private String[] moviesDescription;
     private TypedArray moviesPoster;
 
     public MoviesFragment() {
@@ -54,6 +61,7 @@ public class MoviesFragment extends Fragment {
         addItem(adapter);
     }
 
+
     private void addItem(MoviesAdapter adapter) {
         listMovies = new ArrayList<>();
 
@@ -61,6 +69,8 @@ public class MoviesFragment extends Fragment {
             Movies movie = new Movies();
             movie.setName(moviesName[i]);
             movie.setDate(moviesDate[i]);
+            movie.setActor(moviesActor[i]);
+            movie.setDescription(moviesDescription[i]);
             movie.setPhoto(moviesPoster.getResourceId(i, -1));
             listMovies.add(movie);
         }
@@ -70,6 +80,13 @@ public class MoviesFragment extends Fragment {
     private void prepare() {
         moviesName = getResources().getStringArray(R.array.movie_name);
         moviesDate = getResources().getStringArray(R.array.movies_date);
+        moviesActor = getResources().getStringArray(R.array.artists);
+        moviesDescription = getResources().getStringArray(R.array.movies_description);
         moviesPoster = getResources().obtainTypedArray(R.array.data_photo);
     }
+
+    public interface OnFragmentInteractionListener {
+    }
+
+
 }

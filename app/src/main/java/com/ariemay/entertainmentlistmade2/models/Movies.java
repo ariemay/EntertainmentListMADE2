@@ -7,6 +7,7 @@ public class Movies implements Parcelable {
     private String name;
     private String date;
     private String description;
+    private String actor;
     private int photo;
 
     public String getName() {
@@ -51,16 +52,18 @@ public class Movies implements Parcelable {
         dest.writeString(this.name);
         dest.writeString(this.date);
         dest.writeString(this.description);
+        dest.writeString(this.actor);
         dest.writeInt(this.photo);
     }
 
     public Movies() {
     }
 
-    protected Movies(Parcel in) {
+    private Movies(Parcel in) {
         this.name = in.readString();
         this.date = in.readString();
         this.description = in.readString();
+        this.actor = in.readString();
         this.photo = in.readInt();
     }
 
@@ -75,4 +78,12 @@ public class Movies implements Parcelable {
             return new Movies[size];
         }
     };
+
+    public String getActor() {
+        return actor;
+    }
+
+    public void setActor(String actor) {
+        this.actor = actor;
+    }
 }

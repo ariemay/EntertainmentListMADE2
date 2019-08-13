@@ -1,14 +1,13 @@
 package com.ariemay.entertainmentlistmade2.models;
 
 import android.os.Parcel;
-import android.os.ParcelUuid;
 import android.os.Parcelable;
 
 public class TV implements Parcelable {
     private String tv_name;
     private String tv_genre;
-    private int tv_startYear;
-    private int tv_endYear;
+    private String tv_startYear;
+    private String tv_endYear;
     private String tv_description;
     private int tv_photo;
 
@@ -28,19 +27,19 @@ public class TV implements Parcelable {
         this.tv_genre = tv_genre;
     }
 
-    public int getTv_startYear() {
+    public String getTv_startYear() {
         return tv_startYear;
     }
 
-    public void setTv_startYear(int tv_startYear) {
+    public void setTv_startYear(String tv_startYear) {
         this.tv_startYear = tv_startYear;
     }
 
-    public int getTv_endYear() {
+    public String getTv_endYear() {
         return tv_endYear;
     }
 
-    public void setTv_endYear(int tv_endYear) {
+    public void setTv_endYear(String tv_endYear) {
         this.tv_endYear = tv_endYear;
     }
 
@@ -63,8 +62,8 @@ public class TV implements Parcelable {
     protected TV(Parcel in) {
         tv_name = in.readString();
         tv_genre = in.readString();
-        tv_startYear = in.readInt();
-        tv_endYear = in.readInt();
+        tv_startYear = in.readString();
+        tv_endYear = in.readString();
         tv_description = in.readString();
         tv_photo = in.readInt();
     }
@@ -90,8 +89,8 @@ public class TV implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(tv_name);
         dest.writeString(tv_genre);
-        dest.writeInt(tv_startYear);
-        dest.writeInt(tv_endYear);
+        dest.writeString(tv_startYear);
+        dest.writeString(tv_endYear);
         dest.writeString(tv_description);
         dest.writeInt(tv_photo);
     }

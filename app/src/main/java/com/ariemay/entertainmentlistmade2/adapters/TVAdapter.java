@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.ariemay.entertainmentlistmade2.R;
 import com.ariemay.entertainmentlistmade2.models.TV;
+import com.ariemay.entertainmentlistmade2.views.MovieDetails;
 import com.ariemay.entertainmentlistmade2.views.TVDetails;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -50,20 +51,6 @@ public class TVAdapter extends RecyclerView.Adapter<TVAdapter.ViewHolder> {
         viewHolder.tvName.setText(tvs.get(i).getTv_name());
         viewHolder.tvGenre.setText(tvs.get(i).getTv_genre());
 
-        viewHolder.tvPhoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent detailIntent = new Intent(context, TVDetails.class);
-                context.startActivity(detailIntent);
-            }
-        });
-        viewHolder.tvName.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent detailIntent = new Intent(context, TVDetails.class);
-                context.startActivity(detailIntent);
-            }
-        });
     }
 
     @Override
@@ -81,6 +68,16 @@ public class TVAdapter extends RecyclerView.Adapter<TVAdapter.ViewHolder> {
             tvName = itemView.findViewById(R.id.showName);
             tvGenre = itemView.findViewById(R.id.genre);
             tvPhoto = itemView.findViewById(R.id.tv_poster);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+                    Intent intent = new Intent(context, TVDetails.class);
+                    intent.putExtra(TVDetails.EXTRA_DATA, tvs.get(position));
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }

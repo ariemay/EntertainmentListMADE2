@@ -27,13 +27,13 @@
     </string-array>
 
     <string-array name="tv_genre">
-        <item>Science Fiction</item>
-        <item>Comedy</item>
-        <item>Comedy</item>
-        <item>Informational</item>
-        <item>Comedy, Drama, Romance</item>
-        <item>News</item>
-        <item>Comedy</item>
+        <item>Fiksi Ilmiah</item>
+        <item>Komedi</item>
+        <item>Komedi</item>
+        <item>Informasi</item>
+        <item>Komedi, Drama, Romansa</item>
+        <item>Berita</item>
+        <item>Komedi</item>
     </string-array>
 
     <string-array name="tv_startyear">
@@ -114,4 +114,8 @@
     <string name="default_name">Spiderman</string>
     <string name="tv_default_name">Tersanjung</string>
     <string name="genre_default">Science Fiction</string>
+    <string name="tv_Shows">Siaran TV</string>
+    <string name="default_genre">Serem</string>
+    <string name="default_actor">Arie May</string>
+    <string name="by">Oleh :</string>
 </resources>

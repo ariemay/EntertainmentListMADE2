@@ -27,6 +27,7 @@ public class TVListFragment extends Fragment {
     private ArrayList<TV> listTv;
     private String[] showName;
     private String[] showGenre;
+    private String[] startDate, endDate, description;
     private TypedArray tvPhoto;
 
     public TVListFragment() {
@@ -61,6 +62,9 @@ public class TVListFragment extends Fragment {
             TV tv = new TV();
             tv.setTv_name(showName[i]);
             tv.setTv_genre(showGenre[i]);
+            tv.setTv_startYear(startDate[i]);
+            tv.setTv_endYear(endDate[i]);
+            tv.setTv_description(description[i]);
             tv.setTv_photo(tvPhoto.getResourceId(i, -1));
             listTv.add(tv);
         }
@@ -71,7 +75,12 @@ public class TVListFragment extends Fragment {
     private void prepare() {
         showName = getResources().getStringArray(R.array.tv_name);
         showGenre = getResources().getStringArray(R.array.tv_genre);
+        startDate = getResources().getStringArray(R.array.tv_startyear);
+        endDate = getResources().getStringArray(R.array.tv_endyear);
+        description = getResources().getStringArray(R.array.tv_description);
         tvPhoto = getResources().obtainTypedArray(R.array.data_tv_photo);
     }
 
+    public interface OnFragmentInteractionListener {
+    }
 }

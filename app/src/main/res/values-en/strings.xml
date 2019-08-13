@@ -114,4 +114,8 @@
     <string name="default_name">Spiderman</string>
     <string name="tv_default_name">Tersanjung</string>
     <string name="genre_default">Science Fiction</string>
+    <string name="tv_Shows">TV Shows</string>
+    <string name="default_genre">Horror</string>
+    <string name="default_actor">Arie May</string>
+    <string name="by">By :</string>
 </resources>

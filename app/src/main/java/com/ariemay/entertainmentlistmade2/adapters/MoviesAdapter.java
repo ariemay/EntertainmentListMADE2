@@ -41,7 +41,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MoviesAdapter.ViewHolder viewHolder, int i) {
+    public void onBindViewHolder(@NonNull MoviesAdapter.ViewHolder viewHolder, final int i) {
         Glide.with(context)
                 .load(movies.get(i).getPhoto())
                 .apply(new RequestOptions().override(150,150))
@@ -49,23 +49,6 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
 
         viewHolder.date.setText(movies.get(i).getDate());
         viewHolder.name.setText(movies.get(i).getName());
-
-        viewHolder.poster.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent detailIntent = new Intent(context, MovieDetails.class);
-                detailIntent.putExtra(DetailMovie.EXTRA_DATA, movies.get(i));
-                context.startActivity(detailIntent);
-            }
-        });
-        viewHolder.name.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent detailIntent = new Intent(context, MovieDetails.class);
-//                detailIntent.putExtra(DetailMovies.EXTRA_DATA, movieData.get(i));
-                context.startActivity(detailIntent);
-            }
-        });
     }
 
     @Override
@@ -83,6 +66,16 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
             name = itemView.findViewById(R.id.name);
             date = itemView.findViewById(R.id.date);
             poster = itemView.findViewById(R.id.movie_poster);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    int position = getAdapterPosition();
+                    Intent intent = new Intent(context, MovieDetails.class);
+                    intent.putExtra(MovieDetails.EXTRA_DATA, movies.get(position));
+                    context.startActivity(intent);
+                }
+            });
         }
     }
 }
