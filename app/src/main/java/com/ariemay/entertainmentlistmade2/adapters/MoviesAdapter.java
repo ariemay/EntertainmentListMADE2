@@ -54,7 +54,7 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.ViewHolder
             @Override
             public void onClick(View v) {
                 Intent detailIntent = new Intent(context, MovieDetails.class);
-//                detailIntent.putExtra(DetailMovie.EXTRA_DATA, movies.get(i));
+                detailIntent.putExtra(DetailMovie.EXTRA_DATA, movies.get(i));
                 context.startActivity(detailIntent);
             }
         });
