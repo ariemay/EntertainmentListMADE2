@@ -14,6 +14,11 @@
         <item>Avenger: Infinity War</item>
         <item>Bird Box</item>
         <item>Bohemian Rhapsody</item>
+        <item>Avatar</item>
+        <item>The Martian</item>
+        <item>Avenger: End Game</item>
+        <item>Mr. Bean\'s Holiday</item>
+        <item>The Internship</item>
     </string-array>
 
     <string-array name="tv_name">
@@ -63,7 +68,7 @@
         <item>ABC Afterschool Special is an American television anthology series that aired on ABC from October 14, 1972, to July 1, 1997, usually in the late afternoon on weekdays. Most episodes were dramatically presented situations, often controversial, of interest to children and teenagers. Several episodes were either in animated form or presented as documentaries. Topics included illiteracy, substance abuse and teenage pregnancy. The series won 51 Daytime Emmy Awards during its 25-year run.</item>
         <item>About a Boy is an American single-camera television sitcom that aired on NBC from February 22, 2014, to July 20, 2015. The show was developed by Jason Katims and premiered as a midseason replacement following the 2014 Winter Olympics. </item>
         <item>Access, formerly Access Hollywood, is an American weekday television entertainment news program that premiered on September 9, 1996. It covers events and celebrities in the entertainment industry.</item>
-        <item>Accidental Family is an American sitcom broadcast on NBC during the first part of the 1967-68 U.S. television season.</item>
+        <item>Accidental Family is an American sitcom broadcast on NBC during the first part of the 1967 U.S. television season.</item>
     </string-array>
 
     <string-array name="movies_description">
@@ -72,14 +77,24 @@
         <item>As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.</item>
         <item>Five years after an ominous unseen presence drives most of society to suicide, a survivor and her two children make a desperate bid to reach safety.</item>
         <item>Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock \'n\' roll band Queen in 1970. Hit songs become instant classics. When Mercury\'s increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.</item>
-
+        <item>A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</item>
+        <item>When astronauts blast off from the planet Mars, they leave behind Mark Watney (Matt Damon), presumed dead after a fierce storm. With only a meager amount of supplies, the stranded visitor must utilize his wits and spirit to find a way to survive on the hostile planet. Meanwhile, back on Earth, members of NASA and a team of international scientists work tirelessly to bring him home, while his crew mates hatch their own plan for a daring rescue mission.</item>
+        <item>Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers ( Thor, Black Widow, Captain America and Bruce Banner ) must figure out a way to bring back their vanquished allies for an epic showdown with Thanos, the evil demigod who decimated the planet and the universe.</item>
+        <item>Mr Bean is going on holiday to the south of France, looking for a quiet and sunny trip in the Riviera. However, his trip doesn\'t go as smoothly as he expected when he has to face a series of misunderstandings and totally unfortunate coincidences. Eventually, Mr Bean will end up spoiling the last film of the snobbish director Carson Clay and appearing by accident at the Cannes Film Festival.</item>
+        <item>After old-school salesmen Billy (Vince Vaughn) and Nick (Owen Wilson) find themselves downsized, Billy decides that, despite their complete lack of technological savvy, they should work for Google. The friends somehow manage to finagle internships at the Internet giant and promptly head out to Silicon Valley.</item>
     </string-array>
+
     <string-array name="movies_date">
         <item>October 3, 2018</item>
         <item>December 7, 2018</item>
         <item>April 25, 2018</item>
         <item>December 13, 2018</item>
         <item>October 24, 2018</item>
+        <item>December 18, 2009</item>
+        <item>September 30, 2015</item>
+        <item>April 24, 2019</item>
+        <item>March 24, 2007</item>
+        <item>May 29, 2013</item>
     </string-array>
 
     <string-array name="artists">
@@ -88,6 +103,11 @@
         <item>Avenger\'s Main Artists</item>
         <item>Sandra Bullock</item>
         <item>Rami Malek</item>
+        <item>Sam Worthington</item>
+        <item>Matt Damon</item>
+        <item>Avenger\'s Main Artists</item>
+        <item>Rowan Atkinson</item>
+        <item>Vince Vaughn and Owen Wilson</item>
     </string-array>
 
     <array name="data_photo">
@@ -96,6 +116,11 @@
         <item>@drawable/poster_avengerinfinity</item>
         <item>@drawable/poster_birdbox</item>
         <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_avatar</item>
+        <item>@drawable/poster_martian</item>
+        <item>@drawable/poster_martian</item>
+        <item>@drawable/poster_mrbean</item>
+        <item>@drawable/poster_internship</item>
     </array>
 
     <array name="data_tv_photo">
@@ -118,4 +143,5 @@
     <string name="default_genre">Horror</string>
     <string name="default_actor">Arie May</string>
     <string name="by">By :</string>
+    <string name="default_Enddate">January 1, 1989</string>
 </resources>

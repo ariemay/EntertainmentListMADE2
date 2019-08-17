@@ -14,6 +14,11 @@
         <item>Avenger: Infinity War</item>
         <item>Bird Box</item>
         <item>Bohemian Rhapsody</item>
+        <item>Avatar</item>
+        <item>The Martian</item>
+        <item>Avenger: End Game</item>
+        <item>Mr. Bean\'s Holiday</item>
+        <item>The Internship</item>
     </string-array>
 
     <string-array name="tv_name">
@@ -63,7 +68,7 @@
         <item>ABC Afterschool Special adalah serial antologi televisi Amerika yang ditayangkan di ABC dari 14 Oktober 1972 hingga 1 Juli 1997, biasanya pada sore hari di hari kerja. Sebagian besar episode adalah situasi yang disajikan secara dramatis, seringkali kontroversial, menarik bagi anak-anak dan remaja. Beberapa episode dalam bentuk animasi atau disajikan sebagai film dokumenter. Topik termasuk buta huruf, penyalahgunaan zat dan kehamilan remaja. Serial ini memenangkan 51 Daytime Emmy Awards selama 25 tahun berjalan.</item>
         <item>About a Boy adalah sitkom televisi kamera tunggal Amerika yang mengudara di NBC dari 22 Februari 2014 hingga 20 Juli 2015. Acara ini dikembangkan oleh Jason Katims dan ditayangkan perdana sebagai pengganti midseason setelah Olimpiade Musim Dingin 2014. </item>
         <item>Access, sebelumnya Access Hollywood, adalah program berita hiburan televisi Amerika pada hari kerja yang ditayangkan perdana pada tanggal 9 September 1996. Ini meliput acara dan selebriti di industri hiburan.</item>
-        <item>Accidental Family adalah siaran sitkom Amerika di NBC selama bagian pertama musim televisi AS 1967-68.</item>
+        <item>Accidental Family adalah siaran sitkom Amerika di NBC selama bagian pertama musim televisi AS 1967.</item>
     </string-array>
 
     <string-array name="movies_description">
@@ -72,14 +77,24 @@
         <item>Ketika Avengers dan sekutu mereka terus melindungi dunia dari ancaman yang terlalu besar untuk ditangani oleh satu pahlawan, bahaya baru telah muncul dari bayang-bayang kosmik: Thanos. Seorang lalim penghinaan intergalaksi, tujuannya adalah untuk mengumpulkan semua enam Batu Infinity, artefak kekuatan tak terbayangkan, dan menggunakannya untuk menimbulkan keinginannya yang terpelintir pada semua kenyataan. Segala yang Avengers telah perjuangkan telah mengarah ke saat ini - nasib Bumi dan keberadaannya sendiri tidak pernah lebih pasti.</item>
         <item>Lima tahun setelah kehadiran tak terlihat yang tak menyenangkan membuat sebagian besar masyarakat bunuh diri, seorang yang selamat dan dua anaknya melakukan upaya putus asa untuk mencapai keselamatan.</item>
         <item>Penyanyi Freddie Mercury, gitaris Brian May, drummer Roger Taylor dan gitaris bass John Deacon membuat dunia musik terguncang ketika mereka membentuk band rock Queen Rock pada 1970. Lagu-lagu hit menjadi klasik instan. Ketika gaya hidup Mercury yang semakin liar mulai lepas kendali, Queen segera menghadapi tantangan terbesarnya - menemukan cara untuk menjaga band tetap bersama di tengah kesuksesan dan kelebihan.</item>
-
+        <item>Seorang Marinir lumpuh yang dikirim ke bulan Pandora dalam misi unik menjadi terpecah antara mengikuti perintahnya dan melindungi dunia yang ia rasakan adalah rumahnya.</item>
+        <item>Ketika para astronot meluncur dari planet Mars, mereka meninggalkan Mark Watney (Matt Damon), yang diduga mati setelah badai yang dahsyat. Dengan hanya sedikit persediaan, pengunjung yang terdampar harus memanfaatkan akal dan jiwanya untuk menemukan cara untuk bertahan hidup di planet yang bermusuhan. Sementara itu, kembali ke Bumi, anggota NASA dan tim ilmuwan internasional bekerja tanpa lelah untuk membawanya pulang, sementara teman-teman krunya menetas rencana mereka sendiri untuk misi penyelamatan yang berani. </item>
+        <item>Tergelincir di ruang angkasa tanpa makanan atau air, Tony Stark mengirim pesan ke Pepper Potts saat pasokan oksigennya mulai berkurang. Sementara itu, Avengers yang tersisa - Thor, Black Widow, Captain America dan Bruce Banner - harus mencari cara untuk membawa kembali sekutu mereka yang kalah untuk pertikaian epik dengan Thanos - dewa setengah dewa jahat yang menghancurkan planet dan alam semesta. </item>
+        <item>Mr Bean akan berlibur ke selatan Perancis, mencari perjalanan yang tenang dan cerah di Riviera. Namun, perjalanannya tidak berjalan mulus seperti yang dia harapkan ketika dia harus menghadapi serangkaian kesalahpahaman dan kebetulan yang sama sekali tidak menguntungkan. Akhirnya, Mr Bean akhirnya akan merusak film terakhir sutradara sombong Carson Clay dan muncul secara tidak sengaja di Festival Film Cannes.</item>
+        <item> Setelah wiraniaga sekolah lama Billy (Vince Vaughn) dan Nick (Owen Wilson) menemukan diri mereka dirampingkan, Billy memutuskan bahwa, meskipun mereka sama sekali tidak paham teknologi, mereka harus bekerja untuk Google. Teman-teman entah bagaimana berhasil magang di raksasa internet dan segera menuju ke Silicon Valley. </item>
     </string-array>
+
     <string-array name="movies_date">
         <item>Oktober 3, 2018</item>
         <item>Desember 7, 2018</item>
         <item>April 25, 2018</item>
         <item>Desember 13, 2018</item>
         <item>Oktober 24, 2018</item>
+        <item>Desember 18, 2009</item>
+        <item>September 30, 2015</item>
+        <item>April 24, 2019</item>
+        <item>Maret 24, 2007</item>
+        <item>Mei 29, 2013</item>
     </string-array>
 
     <string-array name="artists">
@@ -88,6 +103,11 @@
         <item>Avenger\'s Main Artists</item>
         <item>Sandra Bullock</item>
         <item>Rami Malek</item>
+        <item>Sam Worthington</item>
+        <item>Matt Damon</item>
+        <item>Avenger\'s Main Artists</item>
+        <item>Rowan Atkinson</item>
+        <item>Vince Vaughn and Owen Wilson</item>
     </string-array>
 
     <array name="data_photo">
@@ -96,6 +116,11 @@
         <item>@drawable/poster_avengerinfinity</item>
         <item>@drawable/poster_birdbox</item>
         <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_avatar</item>
+        <item>@drawable/poster_martian</item>
+        <item>@drawable/poster_endgame</item>
+        <item>@drawable/poster_mrbean</item>
+        <item>@drawable/poster_internship</item>
     </array>
 
     <array name="data_tv_photo">
@@ -118,4 +143,5 @@
     <string name="default_genre">Serem</string>
     <string name="default_actor">Arie May</string>
     <string name="by">Oleh :</string>
+    <string name="default_Enddate">January 1, 1989</string>
 </resources>
